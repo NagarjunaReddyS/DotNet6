@@ -16,7 +16,7 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<JobDB>(options =>{
-    options.UseSqlServer("Server=nwswsqlfincp001.inmar.com,61001;Database=FinanceApi;Trusted_Connection=false;TrustServerCertificate=True;MultipleActiveResultSets=true;Application Name=Finance API;Integrated Security=false;User Id=svcFinanceApi;Password=Wf$m49vctXE3A@K#s*2Z"); 
+    options.UseSqlServer("DummyConnection"); 
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
